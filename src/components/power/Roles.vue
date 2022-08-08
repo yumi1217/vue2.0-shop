@@ -263,7 +263,7 @@ export default {
         if (!valid) return this.$message.warning('请填写正确的信息')
         // 通过以后发起ajax请求
         const { data: res } = await this.$http.post('roles', this.insertRightForm)
-        console.log(res);
+        // console.log(res);
         if (res.meta.status !== 201) return this.$message.error('创建失败')
         this.getRolesList()
         this.$message.success('添加角色成功')

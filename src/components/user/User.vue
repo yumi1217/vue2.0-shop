@@ -267,7 +267,7 @@ export default {
     showEditDialog(userData) {
       // 改变修改用户弹窗的状态
       this.editDialogVisible = true
-      console.log(userData);
+      // console.log(userData);
       this.editForm.username = userData.username
       this.editForm.email = userData.email
       this.editForm.mobile = userData.mobile
@@ -288,7 +288,7 @@ export default {
           email: this.editForm.email,
           mobile: this.editForm.mobile
         })
-        console.log(res);
+        // console.log(res);
         if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
         this.$message.success('修改数据成功')
         this.editDialogVisible = false
