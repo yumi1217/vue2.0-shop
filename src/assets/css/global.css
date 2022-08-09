@@ -30,3 +30,12 @@ body,
 .el-cascader-panel {
   height: 250px;
 }
+
+.el-alert__title {
+  display: flex;
+  align-items: center;
+}
+
+.el-tag {
+  margin: 0 5px;
+}
