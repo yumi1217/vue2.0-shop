@@ -156,7 +156,7 @@ export default {
     },
     // 编辑商品
     editData(item) {
-      console.log(item);
+      // console.log(item);
       this.editDialogVisible = true
       this.editFormId = item.goods_id
       this.editForm.goods_name = item.goods_name
