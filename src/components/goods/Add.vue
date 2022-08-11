@@ -176,7 +176,7 @@ export default {
             sel: 'many'
           }
         })
-        console.log(res);
+        // console.log(res);
         res.data.forEach(item => {
           item.attr_vals = item.attr_vals.length === 0 ? [] : item.attr_vals.split(',')
         })
@@ -188,7 +188,7 @@ export default {
             sel: 'only'
           }
         })
-        console.log(res.data);
+        // console.log(res.data);
         this.onlyTableData = res.data
       }
     },
